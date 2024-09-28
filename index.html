@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrganizeMe</title>
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/api.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Gestor de Tareas</h1>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Añadir nueva tarea" />
+      <textarea id="taskDescription" placeholder="Añadir descripción"></textarea>
+      <select id="taskPriority">
+        <option value="baja">Prioridad Baja</option>
+        <option value="media">Prioridad Media</option>
+        <option value="alta">Prioridad Alta</option>
+      </select>
+      <button id="addTaskBtn">Añadir Tarea</button>
+    </div>
+
+    <div>
+      <label for="priorityFilter">Filtrar por prioridad:</label>
+      <select id="priorityFilter">
+        <option value="todas">Todas</option>
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja">Baja</option>
+      </select>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="actions">
+      <button id="clearTasksBtn">Vaciar Lista</button>
+    </div>
+  </div>
+</body>
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Partners :</h3>
+      <p>pepstore & altemstore.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Development by: nico0o007</h3>
+      <p>OrganizeMe</p>
+    </div>
+    <div class="footer-section">
+      <h3>Síguenos en:</h3>
+      <a href="https://discord.gg/HkZUXvpSxV" target="_blank">discord</a> |
+      <a href="https://web.whatsapp.com" target="_blank">whatsapp</a> |
+      <a href="https://github.com/nicred562" target="_blank">github</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; OrganizeMe: Todos los derechos reservados hasta la fecha!</p>
+  </div>
+</footer>
+</html>
